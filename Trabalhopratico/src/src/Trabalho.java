@@ -124,7 +124,7 @@ public class Trabalho {
 					System.out.println("Quantas máscaras deseja vender?");
 					venda = ent.nextInt();
 					if (verificaestoque(1, tabela,venda)) { // verificação de estoque
-						IE++;
+						IE+=venda;
 						tabela[2][1]=IE;
 						System.out.println("Venda realizada.");
 						break;
@@ -136,7 +136,7 @@ public class Trabalho {
 					System.out.println("Quantas máscaras deseja vender?");
 					venda = ent.nextInt();
 					if (verificaestoque(2, tabela,venda)) { // verificação de estoque
-						AL++;
+						AL+=venda;
 						tabela[2][2]=AL;
 						System.out.println("Venda realizada.");
 						break;
@@ -148,7 +148,7 @@ public class Trabalho {
 					System.out.println("Quantas máscaras deseja vender?");
 					venda = ent.nextInt();
 					if (verificaestoque(3, tabela,venda)) { // verificação de estoque
-						AE++;
+						AE+=venda;
 						tabela[2][3]=AE;
 						System.out.println("Venda realizada.");
 						break;
